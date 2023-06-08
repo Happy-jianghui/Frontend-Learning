@@ -27,7 +27,7 @@ HTML不是一种编程语言，而是一种标记语言(Markup Language)。
 浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/59e7b2a0-951b-407b-b9b7-824d1829ef6b)
 
-# 3. Web 标准
+# 3. Web 标准&#x1F34E;
 **Web标准**是由W3C组织和其他标准化组织制定的**一系列标准的集合**。W3C（万维网联盟）是国际最著名的标准化组织。
 ## 3.1 为什么需要Web 标准
 遵循 Web 标准除了可以让不同的开发人员写出的页面更标准、更统一外，还有以下优点：  
@@ -46,7 +46,7 @@ Web 标准提出的最佳体验方案：**结果、样式、行为相分离**
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/2e75decf-5c53-4bad-918f-8626812649ce)
 
 
-# 4. HTML 标签
+# 4. HTML 标签&#x1F34E;
 ## 4.1 HTML 语法规范
 ### 4.1.1 基本语法概述
 1. HTMl 标签是由尖括号包围的关键词，例如 **< html >**
