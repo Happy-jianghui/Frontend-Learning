@@ -72,7 +72,11 @@ HTML页面也成为HTML文档
 </html>
 ```
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/367fe4de-19f6-48eb-958c-b02cf3c57018)
-  
+HTML 文档的后缀名必须是 .html 或 .htm，浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。
+此时，用浏览器打开这个网页，预览HTML文件
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/569db016-cac6-417e-9180-775b55dfcdb1)
+
+
 
 
 
