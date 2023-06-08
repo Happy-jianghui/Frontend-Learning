@@ -52,6 +52,26 @@ Web 标准提出的最佳体验方案：**结果、样式、行为相分离**
 1. HTMl 标签是由尖括号包围的关键词，例如 **< html >**
 2. HTML 标签**通常是成对出现的**，例如< html > 和 < /html >， 我们称为**双标签**。标签对中的第一个标签是开始标签，第二个标签是结束标签。
 3. 有些特殊的标签必须是单个标签（极少情况），例如**< br/ >，我们成为**单标签**。
+
+### 4.1.2 标签关系
+双标签关系可以分为两类：**包含关系**和**并列关系**
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/a049ab1c-a428-4068-8c32-74fe817a77ce)
+
+## 4.2 HTML 基本结构标签
+### 4.2.1 第一个 HTML 网页
+每个网页都会有一个基本的结构标签（也成为骨架标签），页面内容也是在这些基本标签上书写。  
+HTML页面也成为HTML文档
+``` html
+<html>
+    <head>
+        <title>我的第一个网页</title>
+    </head>
+    <body>
+        我的第一个网页
+    </body>
+</html>
+```
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/367fe4de-19f6-48eb-958c-b02cf3c57018)
   
 
 
