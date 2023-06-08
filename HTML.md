@@ -40,3 +40,46 @@ HTML不是一种编程语言，而是一种标记语言(Markup Language)。
 
 ## 3.2 Web 标准的构成
 主要包括 **结构(Structure)、表现(Presentation)** 和 **行为(Behavior)** 三个方面
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/cc4dcc72-522a-40eb-b8ac-5cf28ab69a3a)
+Web 标准提出的最佳体验方案：**结果、样式、行为相分离**  
+简单理解：**结构写到HTML文件中，表现写到CSS文件中，行为写到Javascript文件中。**
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/2e75decf-5c53-4bad-918f-8626812649ce)
+
+
+# 4. HTML 标签
+## 4.1 HTML 语法规范
+### 4.1.1 基本语法概述
+1. HTMl 标签是由尖括号包围的关键词，例如 **< html >**
+2. HTML 标签**通常是成对出现的**，例如< html > 和 < /html >， 我们称为**双标签**。标签对中的第一个标签是开始标签，第二个标签是结束标签。
+3. 有些特殊的标签必须是单个标签（极少情况），例如**< br/ >，我们成为**单标签**。
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
