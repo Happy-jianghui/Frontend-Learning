@@ -76,6 +76,12 @@ HTML 文档的后缀名必须是 .html 或 .htm，浏览器的作用是读取 HT
 此时，用浏览器打开这个网页，预览HTML文件
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/569db016-cac6-417e-9180-775b55dfcdb1)
 
+## 4.3
+### 4.3.1 标签语义
+标签语义简单理解就是指**标签的含义**，即使这个标签用来干嘛的。  
+**根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。**
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/45c10c63-c947-4f0b-b713-ccbf6193f045)
+
 
 
 
