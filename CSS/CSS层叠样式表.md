@@ -71,9 +71,14 @@ HTML元素以**id属性**来设置id选择器，CSS中id选择器以“**#**”�
 3. id选择器和类选择器最大的不同在于使用次数上。
 4. 类选择器在修改样式中用的最多，ID选择器一般用于页面唯一性的元素上，经常和JavaScript搭配使用。
 
+### 2.1.5 通配符选择器
+在CSS中，通配符选择器使用“ * ”定义，他表示选取页面中所有元素（标签）。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/ace2f630-994e-49f6-ad8a-9b5dcb7ee73c)
+1. 通配符选择器不需要调用，自动就给所有元素使用样式
+2. 特殊情况才使用，比如清除所有的元素标签的内外边距
 
 
-
-
+### 总结
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/4b553cc0-564f-4fee-9cf6-cd066038c7ea)
 
 
