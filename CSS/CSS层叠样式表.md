@@ -12,7 +12,7 @@ CSS让我们的网页更加丰富多彩，布局更加灵活自如。简单理�
 
 ## 1.3 CSS语法规范
 使用HTML时，需要遵从一定的规范，CSS也是如此。**CSS规则由两个主要的部分构成：选择器以及一条或多条声明**。  
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/337be6e1-7221-4011-8add-3c8760d993f3)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/337be6e1-7221-4011-8add-3c8760d993f3)  
 **选择器**是用于指定CSS样式的**HTML标签**，花括号内是对该对象设置的具体样式  
 属性和属性值以“键值对”的形式出现  
 属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等  
