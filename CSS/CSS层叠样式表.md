@@ -137,7 +137,8 @@ CSS Text（文本）属性可定义文本的**外观**，比如文本的颜色�
 
 ## 4.4 文本缩进
 **text-indent**属性用来指定文本的第一行的缩进，通常是将**段落的首行缩进**。
-
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/e6f77aee-7322-4355-9566-812e0e0d4ec2)
+**em**是一个相对单位，就是当前元素（font-size）**1个文字的大小**，如果当前元素没有设置大小，则会按照父元素的1个文字大小。
 
 
 
