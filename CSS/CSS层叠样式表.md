@@ -1,4 +1,4 @@
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8ae8a7e3-5bff-4f9d-b7d7-2721761d6c1e)# 1.CSS简介
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/5acdb17d-3d3b-4565-9d35-e67359deb3a3)![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/eec7a48a-b757-4941-bd25-9838bb6a2912)![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8ae8a7e3-5bff-4f9d-b7d7-2721761d6c1e)# 1.CSS简介
 CSS的主要使用场景就是美化网页，布局页面的。
 ## 1.1 HTML的局限性
 **只关注内容的语义**，比如< h1 >表面这是一个大标题，< p >表明这是一个段落，< img >表明这有一个图片等  
@@ -124,12 +124,19 @@ CSS Text（文本）属性可定义文本的**外观**，比如文本的颜色�
 
 ## 4.1 文本颜色
 **color**属性用于定义文本的颜色
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8f3b0563-c48f-4b41-baf8-0dc1f700e390)
+**开发中最常用的是十六进制**
 
+## 4.2 对齐文本
+**text-align**属性用于设置元素内文本内容的水平对齐方式。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/68f15c50-4594-4496-8711-bb0110bd74d7)
 
+## 4.3 装饰文本
+**text-decoration**属性规定添加到文本的修饰。可以给文本添加下划线、删除线、上划线等。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/92a3dd2d-dfe1-49c6-8755-b7908ad8351a)
 
-
-
-
+## 4.4 文本缩进
+**text-indent**属性用来指定文本的第一行的缩进，通常是将**段落的首行缩进**。
 
 
 
