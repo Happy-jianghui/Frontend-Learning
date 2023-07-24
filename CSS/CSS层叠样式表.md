@@ -1,4 +1,4 @@
-# 1.CSS简介
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8ae8a7e3-5bff-4f9d-b7d7-2721761d6c1e)# 1.CSS简介
 CSS的主要使用场景就是美化网页，布局页面的。
 ## 1.1 HTML的局限性
 **只关注内容的语义**，比如< h1 >表面这是一个大标题，< p >表明这是一个段落，< img >表明这有一个图片等  
@@ -104,13 +104,26 @@ CSS使用**font-size**属性定义字体大小。
 CSS使用**font-weight**属性来设置文本字体的粗细。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/71b65517-cde6-4b93-b243-50d2ccc89078)
 
-## 文字样式
+## 3.4 文字样式
 CSS使用**font-style**属性设置文本风格。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/82b6f802-81c5-4a84-8d5c-15e43cf6fb62)
 **注意**：平时很少给文字加斜体，反而要给斜体标签(em、i)改为不倾斜字体。
 
+## 3.5 字体复合属性
+字体属性可以把以上文字样式综合来写，这样可以更节约代码
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/e70e5c21-6e0b-40f2-bb1b-68d7d008169b)
+1. 使用font属性时，必须按上面语法格式中顺序书写，**不能更换顺序**，并且各个属性间以**空格**隔开
+2. 不需要设置的属性可以省略（取默认值），但**必须保留font-size和font-family属性**，否则font属性将不起作用。
+
+## 3.6 字体属性总结
+ ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/cf4add9c-67c5-4c67-a038-87d91b28a1e2)
 
 
+# 4.CSS文本属性
+CSS Text（文本）属性可定义文本的**外观**，比如文本的颜色、对齐文本、装饰文本、文本缩进、行间距等。
+
+## 4.1 文本颜色
+**color**属性用于定义文本的颜色
 
 
 
