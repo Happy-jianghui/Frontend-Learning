@@ -1,4 +1,4 @@
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/5acdb17d-3d3b-4565-9d35-e67359deb3a3)![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/eec7a48a-b757-4941-bd25-9838bb6a2912)![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8ae8a7e3-5bff-4f9d-b7d7-2721761d6c1e)# 1.CSS简介
+# 1.CSS简介
 CSS的主要使用场景就是美化网页，布局页面的。
 ## 1.1 HTML的局限性
 **只关注内容的语义**，比如< h1 >表面这是一个大标题，< p >表明这是一个段落，< img >表明这有一个图片等  
