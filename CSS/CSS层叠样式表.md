@@ -144,11 +144,29 @@ CSS Text（文本）属性可定义文本的**外观**，比如文本的颜色�
 **line-height**属性用于设置行间的距离（行高）。可以控制文字行与行之间的距离。
  ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/224f0968-ff21-4436-842f-72378218ad1b)
 
-## 4，6 文本属性总结
+## 4.6 文本属性总结
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/e3e5a612-405c-4d90-a564-ed6fe32760b1)
 
 
+# 5. CSS的引入方式
+## 5.1 内部样式表
+内部样式表（内嵌样式表）是写到HTML页面内部，是将所有的CSS代码抽取出来，单独放到一个< style >标签中。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/776d91e7-ce2f-4277-a7e8-004501f812e2)
+1. < style >标签理论上可以放在HTML文档的任何地方，但一般会放在文档的< head >标签中
+2. 通过此种方式，可以方便控制当前整个页面中的元素样式设置
+3. 代码结构清晰，但是并没有实现结构与样式完全分离
+4. 使用内部样式表设定CSS，通常也被称为嵌入式引入，这种方式是练习常用的方式
 
+## 5.2 行内样式表
+行内样式表（内联样式表）是**元素标签内部的style属性中设定CSS样式**，适合于修改简单样式。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8de5d258-bb9f-4b91-a973-c198f11b9a19)
+1. style其实就是标签的属性
+2. 在双引号中间，写法要符合CSS规范
+3. 可以控制当前的标签设置样式
+
+## 5.3 外部样式表
+样式单独写到CSS文件中，之后把CSS文件引入到HTML页面中使用。实际开发都在用，适合于样式比较多的情况。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/82165eb8-e207-46be-9edb-f1ef9eab1006)
 
 
 
