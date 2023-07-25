@@ -166,8 +166,11 @@ CSS Text（文本）属性可定义文本的**外观**，比如文本的颜色�
 
 ## 5.3 外部样式表
 样式单独写到CSS文件中，之后把CSS文件引入到HTML页面中使用。实际开发都在用，适合于样式比较多的情况。
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/82165eb8-e207-46be-9edb-f1ef9eab1006)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/7cc9702e-e747-4cdc-bba1-451c2311d7e2)
+使用外部样式表设定CSS，通常也被称为**外链式**或**链接式引入**
 
+## 5.4 引入方式总结
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/696c98de-580c-4929-96e5-df351185b12a)
 
 
 
