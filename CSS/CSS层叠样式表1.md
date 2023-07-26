@@ -1,4 +1,4 @@
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/0026c0e2-73b2-4fec-83cc-1c7738d387c9)# 1.CSS的复合选择器
+# 1.CSS的复合选择器
 在CSS中，可以根据选择器的类型分为**基础选择器**和**复合选择器**，复合选择器是建立在基础选择器之上，对基本选择器进行组合形成的。
 1. 复合选择器可以更准确、更高效的选择目标元素（标签）
 2. 复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的
@@ -6,9 +6,9 @@
 
 ## 1.1 后代选择器
 **后代选择器**又称为**包含选择器**，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套是，内层标签就成为外层标签的后代。  
-语法：
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/062b783e-a639-49f2-a2ff-e16c2a89a60a)
-上述语法表示**选择元素1里面的所有元素2**（后代元素）
+语法：  
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/062b783e-a639-49f2-a2ff-e16c2a89a60a)  
+上述语法表示**选择元素1里面的所有元素2**（后代元素）  
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/58dfbf0a-a4b8-4d89-8975-ea03b5950cd9)
 1. 元素1和元素2中间用**空格隔开**
 2. 元素1是父级，元素2是子级，最终选择的是**元素2**
@@ -17,7 +17,7 @@
 
 ## 1.2 子选择器
 **子元素选择器（子选择器）**只能作为某元素的最近一级子元素。简单理解就是选亲儿子元素。
-![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8c9c3294-4656-43ff-999e-5041cb9277ff)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/8c9c3294-4656-43ff-999e-5041cb9277ff)  
 上述语法表示 **选择元素1里面的所有直接后代（子元素）元素2**。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/ad5d2014-3d0a-48b6-847f-2f76072d2027)
 1. 元素1 和 元素2 中间用**大于号**隔开
