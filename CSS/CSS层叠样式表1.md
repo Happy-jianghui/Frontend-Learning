@@ -131,12 +131,19 @@ HTML元素一般分为**块元素**和**行内元素**两种类型。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/179dccd1-56fa-48d9-b8b3-65e7b4d1d329)  
 参数代表的意思是：x坐标和y坐标。可以使用**方位名词**或者**精确单位**  
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/faa6dab5-6953-4e11-b0c7-69c26ed8b4f8)
-注意：参数是方位名字
+参数是方位名字
 1. 如果指定的两个值都是方位名词，则两个值前后顺序无关，比如left top和top left效果一致
 2. 如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+参数是精确单位
+1. 如果参数值是精确坐标，那么第一个肯定是x坐标，第二个肯定是y坐标
+2. 如果只指定一个数值，那该数值一定是x坐标，另一个默认垂直居中
+参数是混合单位
+1. 如果指定的两个值是精确单位和方位名词混合使用，则第一个值是x坐标，第二个值是y坐标
 
-
-
+## 3.5 背景图像固定
+**background-attachment**属性设置背景图像是否固定或者随着页面的其余部分滚动。  
+background-attachment后期可以制作视差滚动的效果。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/da15464d-a1ef-4f67-99d3-3162b14b413f)
 
 
 
