@@ -145,32 +145,18 @@ HTML元素一般分为**块元素**和**行内元素**两种类型。
 background-attachment后期可以制作视差滚动的效果。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/da15464d-a1ef-4f67-99d3-3162b14b413f)
 
+## 3.6 背景复合写法
+为了简化背景属性的代码，我们可以将这些属性合并简写在同一个属性**background**中，从而节约代码量。    
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/1f2a0292-fa3d-4b38-bfe8-1e64d503d996)
 
 
+## 3.7 背景色半透明
+CSS为我们提供了背景颜色半透明的效果。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/73d7a4df-e3c1-4a7c-99d4-e3fd69d5f98e)
+1. 最后一个参数是alpha透明度，取值范围在0~1之间
+2. 习惯把0.3的0省略掉，写为background: rgba(0,0,0,.3)
+3. 注意：背景半透明是指盒子背景半透明，盒子里面的内容不受影响
+4. CSS3新增的属性，是IE9+版本浏览器才支持的
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 3.8 背景总结
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/5f2c4b98-f3c4-4939-9898-062f90ebde55)
