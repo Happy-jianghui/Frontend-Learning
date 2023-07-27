@@ -122,9 +122,18 @@ HTML元素一般分为**块元素**和**行内元素**两种类型。
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/a798e737-eff3-462f-94dd-c59a28370b7a)
 
 ## 3.3 背景平铺
+如果需要在HTML页面上对背景图片进行平铺，可以使用**background-repeat**属性。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/2ab8baf2-d23d-47a1-b149-e2f7b1412911)
 
 
-
+## 3.4 背景图片位置
+利用**background-position**属性可以改变图片在背景中的位置。  
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/179dccd1-56fa-48d9-b8b3-65e7b4d1d329)  
+参数代表的意思是：x坐标和y坐标。可以使用**方位名词**或者**精确单位**  
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/faa6dab5-6953-4e11-b0c7-69c26ed8b4f8)
+注意：参数是方位名字
+1. 如果指定的两个值都是方位名词，则两个值前后顺序无关，比如left top和top left效果一致
+2. 如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
 
 
 
