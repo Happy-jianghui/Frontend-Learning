@@ -1,0 +1,26 @@
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/95312be9-4b0d-4f2b-bdf2-f53c96ea6a02)# 1. HTML5的新特性
+**HTML5**的新增特性主要是针对于以前的不足，增加了一些**新的标签**、**新的表单**和**新的表单属性**等。  
+新特性IE9+以上版本的浏览器才支持
+
+## 1.1 HTML5新增的语义化标签
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/d4c0ac88-247a-4b26-b5bc-429e51405209)
+**注意**：
+ - 这种语义化标准主要针对**搜索引擎**的
+ - 这些新标签中可以使用**多次**
+ - 在IE9中，需要把这些元素转换为**块级元素**
+ - 移动端更喜欢用这些标签
+
+## 1.2 HTML5新增的多媒体标签
+新增的多媒体标签主要包含两个：  
+ 1. **音频: <audio>**
+ 2. **视频: <video>**
+使用它们可以很方便在页面中嵌入音频和视频，而不再去使用flash和其他浏览器插件。
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/e209bf55-6b6d-40eb-868f-aa396418a727)
+
+### 1.2.1 视频 Video
+HTML5在不使用插件的情况下，也可以原生
+语法：  
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/39cbc541-c9f4-4ee2-a7fc-6d1f0b0c2cba)  
+常见属性：  
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/bdab002c-c86d-49a8-9509-855b7606d64a)
+
