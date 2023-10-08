@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影卡片</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://kit.fontawesome.com/0008584113.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .outer {
+        width: 270px;
+        margin: 100px auto;
+        /* 设置阴影 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* .img-wrapper{
+        border: 1px red solid;
+    } */
+
+    /* 设置图片 */
+    .img-wrapper img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+    .info {
+        padding: 0 18px;
+
+    }
+
+    /* 设置标题 */
+    .info .title {
+        color: #717171;
+        font-size: 18px;
+        margin: 13px 0 15px 0;
+    }
+
+    .info .category {
+        color: #acaaaa;
+        font-size: 14px;
+    }
+
+    .info .category i {
+        margin: 0 7px 0 4px;
+    }
+
+    /* 设置简介样式 */
+    .info .intro {
+        margin: 18px 0 15px 4px;
+        color: #acaaaa;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* 设置评分 */
+    .mark-wrapper {
+        border-top: 1px #a9a9a9 solid;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 16px;
+        color:#ddd;
+    }
+
+    .mark-wrapper .star{
+       float: left;
+    }
+
+    .mark-wrapper .light{
+        color:#b9cb41
+    }
+
+    .mark-wrapper  .zhihu {
+        float:right;
+    }
+</style>
+
+<body>
+    <!-- 创建一个外层容器 -->
+    <div class="outer">
+        <!-- 创建图片容器 -->
+        <div class="img-wrapper">
+            <img src="./img/kuitan.webp" alt="">
+        </div>
+        <!-- 创建内容容器 -->
+        <div class="info">
+            <h2 class="title">韩剧</h2>
+            <h3 class="category"><i class="fas fa-map-marker-alt"></i>电视剧</h3>
+            <p class="intro">《Mouse: The Predator》（窥探：捕食者）将从捕食者郑在勋／郑正直(音：郑巴凛)的视角，以顺向时间轴回顾武镇连环杀人事件的始末。</p>
+        </div>
+        <!-- 创建评论容器 -->
+        <div class="mark-wrapper">
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <!-- 创建 -->
+            <ul class="zhihu">
+                <li class="fab fa-zhihu"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

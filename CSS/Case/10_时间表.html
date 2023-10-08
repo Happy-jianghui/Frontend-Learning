@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>时间表</title>
+  </head>
+  <style>
+    .clock{
+        width: 500px;
+        height: 500px;
+        margin:0 auto;
+        margin-top: 100px;
+        border-radius: 50%;
+        /* border: 3px solid gold ; */
+        position: relative;
+        background-image: url(./img/clock.jpg);
+        background-size: cover;
+    }
+
+    .clock > div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .hour-wrapper {
+        width: 70%;
+        height: 70%;
+        /* background-color: antiquewhite; */
+        animation: run 43200s steps(12) infinite;
+    }
+
+    .hour{
+        height: 50%;
+        width: 6px;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    .min-wrapper {
+        width: 80%;
+        height: 80%;
+        /* background-color: antiquewhite; */
+        animation: run 3600s steps(60) infinite;
+    }
+
+    .min{
+        height: 50%;
+        width: 4px;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    .sec-wrapper {
+        width: 90%;
+        height: 90%;
+        /* background-color: antiquewhite; */
+        animation: run 60s steps(60) infinite;
+    }
+
+    .sec{
+        height: 50%;
+        width: 2px;
+        background-color: greenyellow;
+        margin: 0 auto;
+    }
+
+    @keyframes run {
+        from{
+            transform: rotateZ(0);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+  </style>
+  <body>
+      <!-- 创建表的容器 -->
+    <div class="clock">
+      <!-- 设置时针 -->
+      <div class="hour-wrapper">
+        <div class="hour"></div>
+      </div>
+      <!-- 设置分针 -->
+      <div class="min-wrapper">
+        <div class="min"></div>
+      </div>
+      <!-- 设置秒针 -->
+      <div class="sec-wrapper">
+        <div class="sec"></div>
+      </div>
+    </div>
+  </body>
+</html>

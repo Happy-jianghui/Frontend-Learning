@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 定义动画 */
+        /* 可以做多个状态的变化 keyframe 关键帧 */
+        /* 里面的百分比要是整数 */
+        /* 里面的百分比就是 总的时间的划分 */
+        @keyframes move {
+            /* 开始状态 */
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(1000px, 0);
+            }
+            50% {
+                transform: translate(1000px, 500px);
+            }
+            75% {
+                transform: translate(0, 500px);
+            }
+            /* 结束状态 */
+            100% {
+                transform: translate(0,0);
+            }
+        }
+        /* from 和 to 等价于 0% 和 100% */
+        /* @keyframes move {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(1000px, 0);
+            }
+        } */
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2. 调用动画 */
+            /* 动画名称 */
+            /* animation-name: move; */
+            /* 动画持续时间 */
+            /* animation-duration: 10s; */
+            /* 动画运动曲线 */
+            /* animation-timing-function: ease; */
+            /* 何时开始 */
+            animation-delay: 1s;
+            /* 重复次数 iteration 重复的 count 次数 infinite 无限 */
+            /* animation-iteration-count: infinite; */
+            /* 是否反方向播放 默认的是normal 反方向 alternate */
+            /* animation-direction: alternate; */
+            /* 动画结束后的状态 默认的是backwards 回到起始状态  停留在结束状态 forwards */
+            /* animation-fill-mode: forwards ; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* 前面2个属性 name duration 必须要写 */
+            animation: move 10s linear 1s infinite alternate forwards;
+        }
+        div:hover {
+            /* 鼠标经过div 让这个div停止动画，鼠标离开就继续动画 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+/* body{
+    background-color: whitesmoke;
+} */
+
+    a {
+        /* 去除文字下划线 */
+        text-decoration: none;
+    }
+
+    .list {
+        width: 300px;
+        height: 324px;
+        background-color:#fff;
+        margin: 50px auto;
+        border-top: 1px solid #ddd
+    }
+
+    .title {
+        height: 40px;
+        border-top: 1px solid red;
+        line-height: 40px;
+        /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+        display: inline-block;
+        margin-top: -1px;
+    }
+
+    .title a {
+        /* text-decoration: none; */
+        color: black;
+        font-size: 15px
+    }
+
+    .title a:hover{
+        color: red;
+    }
+
+    .img{
+        height: 150px;
+    }
+
+    .img .news-img {
+        color:#fff;
+        margin-top: -30px;
+        margin-left: 30px;
+    }
+
+    .newslist{
+        margin: 10px 0;
+        /* padding-left: 14px; */
+    }
+
+    .newslist li{
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px; 
+        
+    }
+
+    .newslist li::before{
+        content:'■';
+        color: rgb(187, 184, 184);
+        font-size: 10px;
+        margin-right: 8px;
+
+    }
+
+    .newslist li a{
+        color: #666;
+    }
+
+    .newslist li a:hover{
+        color: red;
+    }
+</style>
+
+<body>
+    <!-- 创建新闻列表的外侧容器 -->
+    <div class="list">
+        <!-- 创建一个标题标签 -->
+        <h2 class="title">
+            <a href="#">军事</a> · 
+            <a href="#">航空</a>
+        </h2>
+        <!-- 创建一个图片的容器 -->
+        <div class="img">
+            <a href="#">
+                <img src="img/new.webp" alt="155毫米卡车炮">
+                <!-- 创建图片标题 -->
+                <h3 class="news-img">
+                    国产155毫米卡车炮实弹射击实拍
+                </h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="newslist">
+            <li>
+                <a href="#">解放军戴防毒面具大狙冲锋气势惊人</a>
+            </li>
+            <li>
+                <a href="#">要花3500万！美军事故F22大修照片曝光</a>
+            </li>
+            <li>
+                <a href="#">无人机光影秀扮靓江苏无锡拈花湾</a>
+            </li>
+            <li>
+                <a href="#">浙江温州往返美国洛杉矶国际货运航线开通</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

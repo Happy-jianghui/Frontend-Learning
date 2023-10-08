@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<script>
+    function lengthOfLongestSubstring(s){
+    let l=0;
+    let res=0;
+    let map=new Map();
+    for(let r=0;r<s.length;r++){
+        console.log("r"+"的值为",r);
+        console.log("s[r]的值为",s[r]);
+        console.log("l的值为",l);
+        console.log("res的值为",res);
+        if(map.has(s[r])&&map.get(s[r])>=l){
+            console.log("在循环中l的值为",l);
+            console.log("map.get(s[r])的值为",map.get(s[r]));
+            l=map.get(s[r])+1;
+            console.log("在循环中+1的l的值为",l);
+        }
+        // console.log(s.slice(l,r+1))
+        res=Math.max(res,r-l+1);
+        console.log("下一次res的值为",res);
+        map.set(s[r],r);
+        console.log("map",map)
+    }
+    return res;
+}
+
+console.log(lengthOfLongestSubstring("ababcd"))
+</script>
+<style>
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: #bfa;
+        padding: 10px;
+        border: 10px red solid;
+        box-sizing:content-box
+    }
+</style>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
