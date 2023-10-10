@@ -34,12 +34,27 @@
 
 ## 2.4 meta视口标签
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/baedfd6e-3c48-4223-9c59-3de53172a0a8)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/7245bbef-69ba-49c5-946c-b4e189743539)
+
+## 2.6 标准的viewport设置
+ - 视口宽度和设备保持一致
+ - 视口的默认缩放比例1.0
+ - 不允许用户自行缩放
+ - 最大允许的缩放比例1.0
+ - 最小允许的缩放比例1.0
+
+# 3 二倍图
+## 3.1 物理像素&物理像素比
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/694d429e-6ae1-4001-8f26-ba3df87a69f2)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/a2f50618-06de-4f66-ac54-013a24e8b55b)
+
+## 3.2 多倍图
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/1644e82f-2844-4cff-a1a0-c656f997f75b)
 
 
-
-
-
-
+## 3.3 背景缩放background-size
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/d5d06bf7-141a-4e94-ba26-c6c4f1ac1a1c)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/688d8403-5439-4157-9d55-399f102fedbd)
 
 
 
