@@ -90,13 +90,14 @@
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/892d3f2d-9d70-4665-bf3a-ca933defdd5b)
 
 # 6. 移动端常见布局
-## 6.1 移动端技术选型
+**移动端技术选型**  
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/c51a8675-d73e-46a9-ab1a-b1865ccd7331)
 
-
-
-
-
+## 6.1 流式布局（百分比布局）
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/e48ae03f-ac97-4a72-b58b-6215b037b7f4)
+ - max-width 最大宽度（max-height 最大高度）
+ - min-width 最小宽度（min-height 最小高度）
+  
 
 
 
