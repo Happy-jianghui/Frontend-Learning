@@ -57,9 +57,41 @@
 ![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/688d8403-5439-4157-9d55-399f102fedbd)
 
 
+# 4. 移动端开发选择
+## 4.1 移动端主流方案
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/44abec21-1e99-48e8-9b9e-2c8af8c0bb16)
 
+## 4.2 单独移动端页面（主流）
+通常情况下，网址域名前面加**m(mobile)** 可以打开移动端。通过判断设备，如果是移动设备打开，则跳到**移动端页面**
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/c9b8a567-f0bf-49c4-b8fa-9be8a1150558)
 
+## 4.3 响应式兼容PC移动端
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/b3edea3c-af56-4fcf-97e6-072e8c88b51d)
 
+# 5. 移动端技术解决方案
+## 5.1 移动端浏览器 
+移动端浏览器基本以webkit内核为主，因此我们就考虑webkit兼容性问题。  
+我们可以放心使用H5标签和CSS3样式  
+同时我们浏览器私有前缀，我们呢只需要考虑添加webkit即可
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/d501dc10-885e-4d51-892a-b3d70f27fae2)
+
+## 5.2 CSS初始化 normalize.css
+移动端CSS初始化推荐使用normalize.css
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/c5f7ff1e-d825-4f5a-8c81-3cd73faa513a)
+
+## 5.3 CSS盒子模型 box-sizing
+- 传统模式宽度计算： 盒子的宽度 = CSS中设置的width + border + padding
+- CSS3盒子模型： 盒子的宽度 = CSS中设置的宽度width 里面包含了border和padding
+也就是说，我们的CSS3中的盒子模型，padding和border不会撑大盒子了
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/3a849095-613f-4a6d-8a6e-ddebcddf9d45)
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/ab752e24-b36c-4d86-88eb-30a2809617e0)
+
+## 5.4 特殊样式 
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/892d3f2d-9d70-4665-bf3a-ca933defdd5b)
+
+# 6. 移动端常见布局
+## 6.1 移动端技术选型
+![image](https://github.com/Happy-jianghui/Frontend-Learning/assets/98568967/c51a8675-d73e-46a9-ab1a-b1865ccd7331)
 
 
 
