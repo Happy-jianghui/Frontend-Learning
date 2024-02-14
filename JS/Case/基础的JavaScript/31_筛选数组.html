@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 将数组[2,0,6,1,77,0,52,0,25,7]中大于等于10的元素选出来，放入新数组
+        var arr = [2,0,6,1,77,0,52,0,25,7];
+        var arr1 = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                arr1[j] = arr[i];
+                j++
+            }
+        }
+        console.log(arr1);
+
+        // 办法2 
+        var oldarr = [2,0,6,1,77,0,52,0,25,7];
+        var arr2 = [];
+        for (var i = 0; i < oldarr.length; i++) {
+            if (oldarr[i] >= 10) {
+                arr2[arr2.length] = oldarr[i]
+            }
+        }
+        console.log(arr2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

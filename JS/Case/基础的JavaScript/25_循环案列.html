@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.  求1-100之间所有的总和平均值
+        let sum = 0;
+        let average = 0;
+        for (let i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        average = sum / 100;
+        console.log('1-100之间所有的总为' + sum);
+        console.log('1-100之间所有的平均值为' + average);
+
+        console.log('-----------------------------');
+
+        // 2. 求1-100之间所有偶数的和
+        let sum = 0;
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        console.log('1-100之间所有偶数的和' + sum);
+
+
+        console.log('-----------------------------');
+
+
+        // 3. 求100以内7的倍数的总和
+        let result = 0;
+        for (let i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                result += i;
+            }
+        }
+        console.log('100以内7的倍数的总和' + result);
+
+        console.log('-----------------------------');
+
+
+        // 4. 使用for 循环打印矩形，要求每次只能输出一个⭐
+        let str = '';
+        for (let i = 1; i <= 4; i++) {
+            for (let j = 1; j <= 5; j++) {
+                str += '⭐';
+            }
+            str += '\n'
+        }
+        console.log(str);
+
+
+        console.log('-----------------------------');
+
+        // 5. 使用for循环打印三角形
+        let str = '';
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                str += '⭐';
+            }
+            str += '\n'
+        }
+        console.log(str);
+
+
+        // 6. 使用for 循环打印99乘法表
+        let str = '';
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                str += j + 'x' + i + '=' + j * i + '\t'
+            }
+            str += '\n'
+        }
+        console.log(str);
+
+        // 7. 接受用户输入的用户名和密码，若用户名为"admin"，密码为"123456"，则提示用户登陆成功！否则，让用户一直输入。
+        let user = prompt('请输入您的用户名：');
+        let pass = prompt('请输入您的密码：');
+        while (user !== 'admin' && pass !== '123456') {
+            alert('很遗憾，用户名和密码错误，请重新输入用户名和密码');
+            user = prompt('请输入您的用户名：');
+            pass = prompt('请输入您的密码：');
+        }
+        alert('恭喜您，登陆成功！');
+
+        // 求整数1~100的累加值，但要求跳过所有个位为3的数
+        let sum = 0;
+        for (let i = 1; i <= 100; i++) {
+            if (i % 10 == 3 && i %10 == 10) {
+                continue
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

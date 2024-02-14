@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 查找字符串'abcoefoxyozzopp'中所有o出现的位置以及次数
+        function Findstr(str, zi) {
+            var count = 0;
+            var index = str.indexOf(zi)
+            while (index !== -1) {
+                count++;
+                console.log(index);
+                index = str.indexOf(zi, index+1)
+            }
+            console.log(zi + '出现的次数为' + count);
+        }
+        Findstr('abcoefoxyozzopp', 'o')
+
+        // ['red', 'blue', 'red', 'green', 'pink', 'red'] 求red 出现的位置和次数
+        Findstr(['red', 'blue', 'red', 'green', 'pink', 'red'], 'red')
+
+        // 判断字符串中出现次数最多的字符，并统计其次数
+        var str1 = 'abcoefoxyozzopp';
+        var obj = {};
+        for (var i = 0; i < str1.length; i++) {
+            var zifu = str1[i];
+            if (obj[zifu]) { // o[zifu] 得到的是属性值
+                obj[zifu] += 1;
+            } else {
+                obj[zifu] = 1;
+            }
+        }
+        console.log(obj);
+        // 2. 遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in obj) {
+            // k得到的是属性名
+            // obj[k] 得到的是属性值
+            if (obj[k] > max) {
+                max = obj[k];
+                ch = k;
+            }
+        }
+        console.log('最多次数为：'+ max);
+        console.log('次数最多的字符：' + ch);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

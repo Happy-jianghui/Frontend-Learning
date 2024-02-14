@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 程序随机生成1~10之间的数字，并让用户输入一个数字
+        // 1. 如果大于该数字，就提示，数字大了，继续猜
+        // 2. 如果小于该数字，就提示数字小了，继续猜
+        // 3. 如果等于该数字，就提示猜对了，结束程序
+        /* function GuessingNum(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        var random = GuessingNum(1, 10)
+        while(true) { //死循环
+            var num = prompt('来猜猜数字，输入1~10之间的一个数字：');
+            if (num > random) {
+                alert('数字大了，继续猜')
+            } else if (num < random) {
+                alert('数字小了，继续猜')
+            } else {
+                alert('猜对了')
+                break
+            }
+        } */
+
+        // 要求用户才1~50之间的一个数字 但是只有10次猜的机会
+        function GuessingNum(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+        var random = GuessingNum(1, 50)
+        var count = 0;
+        while(count != 5) { //死循环
+            var num = prompt('来猜猜数字，输入1~50之间的一个数字，目前有5次猜数字的机会 ：');
+            if (num > random) {
+                count += 1
+                var res = 5 - count
+                alert('数字大了，继续猜。' + '机会还剩' + res + '次')
+            } else if (num < random) {
+                count += 1
+                var res = 5 - count
+                alert('数字小了，继续猜。' + '机会还剩' + res + '次')
+            } else {
+                alert('猜对了')
+                break
+            }
+        }
+        alert('猜数字的次数机会用尽了，下次再见')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
