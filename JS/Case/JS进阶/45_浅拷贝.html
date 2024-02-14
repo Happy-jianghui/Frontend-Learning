@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj ={
+            uname: 'saber',
+            age: 18,
+            family: {
+                bady: '小saber'
+            }
+        }
+        // 浅拷贝
+        /* const o = {...obj}
+        o.uname = 'red'
+        console.log(o)
+        console.log(obj) */
+        const o = {}
+        Object.assign(o, obj)
+        o.age = 20
+        o.family.bady = 'Saber'
+        console.log(o)
+        console.log(obj)
+    </script>
+</body>
+</html>

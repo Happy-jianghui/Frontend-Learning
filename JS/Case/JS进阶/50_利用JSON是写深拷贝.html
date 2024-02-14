@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            uname: 'Saber',
+            age: 18,
+            habby: ['篮球', '打游戏'],
+            family: {
+                baby: 'Peiqi'
+            }
+        }
+        // 把对象转换为 JSON 字符串
+        // console.log(JSON.stringify(obj))
+        const o = JSON.parse(JSON.stringify(obj))
+        console.log(o)
+        o.family.baby = '123'
+        console.log(obj);
+        
+    </script>
+</body>
+</html>

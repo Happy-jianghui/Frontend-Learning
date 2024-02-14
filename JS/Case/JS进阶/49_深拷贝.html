@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            uname: 'Saber',
+            age: 18,
+            habby: ['篮球', '打游戏'],
+            family: {
+                baby: 'Peiqi'
+            }
+        }
+        const o = {}
+        // 拷贝函数
+        function deepCopy(newObj, oldObj) {
+            for(let k in oldObj) {
+                // 处理数组的问题 一定先写数组 再写对象， 不能颠倒
+                if(oldObj[k] instanceof Array) {
+                    // newObj[k] 接受[] hobby
+                    // oldObj[k] ['篮球', '打游戏']
+                    newObj[k] = []
+                    deepCopy(newObj[k], oldObj[k])
+                }else if(oldObj[k] instanceof Object) {
+                    newObj[k] = {}
+                    deepCopy(newObj[k], oldObj[k])
+                }
+                else {
+                    // k 属性名 oldObj[k] 属性值
+                    // newObj[k] = o.uname 给新对象添加属性
+                    newObj[k] = oldObj[k]
+                }
+            }
+        }
+        deepCopy(o, obj) // 调用函数 两个参数 o 新对象 obj 旧对象
+        console.log(o)
+        o.age = 20
+        o.habby[0] = '足球'
+        o.family.baby = 'qiaoqi'
+        console.log(o)
+        console.log(obj);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 请用对象字面量的形式创建一个名为可可的狗对象
+        var dog = {
+            name: '可可',
+            type: '阿拉斯加犬',
+            age: 5,
+            color: '棕红色',
+            skill : 'bark'
+        }
+
+
+        console.log('-----------------------');
+        
+        // 请用new Object形式创建一个鸣人对象
+        var obj = new Object();
+        obj.name = '鸣人';
+        obj.sex = '男';
+        obj.age = 19;
+        obj.skill = '影分身术';
+        console.log(obj.name);
+
+        // 利用构造函数创建两个英雄对象。函数中的公共部分包括：姓名属性(name)， 类型属性(type)， 血量属性(blood)和攻击方式(attack)
+        function Here(name, type, blood, attack) {
+            this.name = name;
+            this.type = type;
+            this.blood = blood;
+            this.attack = attack;
+        }
+        var LP = new Here('廉颇','力量型','500血量','近战')
+        console.log(LP.name);
+        console.log(LP['type']);
+        var HY = new Here('后裔','射手型','100血量','远程')
+        console.log(HY.name);
+        console.log(HY['type']);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

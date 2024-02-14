@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* console.log(num + '件')
+    var num = 10
+    // 变量提升过程如下
+    // 1. 把所有var声明的变量提升到 当前作用域的最前面
+    // 2，只提升声明，不提升赋值
+    var num
+    console.log(num + '件')
+    num = 10 */
+
+
+    function fn() {
+      console.log(num);
+      var num = 10
+    }
+    fn()
+
+    // 变量提升过程如下
+    function fn() {
+      var num
+      console.log(num);
+      num = 10
+    }
+
+  </script>
+</body>
+</html>

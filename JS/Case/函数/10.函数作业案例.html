@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 写一个函数，用户输入任意两个数字的任意算术运算（简单的计算器小功能），并能弹出运算后的结果。
+        /* function getSuanshu(num1, num2) {
+
+            return num1  + num2
+        }
+        res = getSuanshu(1,2);
+        alert(res)
+
+        // 用户输入任意两个数字的最大值，并能弹出运算后的结果
+        function getMax(num1, num2) {
+            if (num1 > num2) {
+                return num1
+            } else if (num1 < num2) {
+                return num2
+            } else {
+                return num1
+            }
+        }
+        var res = getMax(5,13)
+        alert(res)
+
+        // 用户输入任意三个不同数字的最大值，并能弹出运算后的结果
+        function getthreemax (num1, num2, num3) {
+            if (num1 > num3) {
+                if (num1 > num2) {
+                    return num1
+                }else {
+                    return num2
+                }
+            } else { // num1 < num3
+                if (num2 < num3) {
+                    return num3
+                }else { //num2 > num3
+                    return num2
+                }
+            }
+        }
+        var res = getthreemax(8,5,10)
+        alert(res)
+
+        // 利用函数封装方式，翻转任意一个数组
+        function reverse(nums) {
+            var newarr = [];
+            for (var i = nums.length - 1; i >= 0; i--) {
+                newarr[newarr.length] = nums[i];
+            }
+            return newarr
+        }
+        console.log(reverse([1, 2, 3, 3, 4]));
+        console.log(reverse(['a', 'b', 'c']));
+
+        // 利用函数封装方式，对数组排序--冒泡排序
+        function sort(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < arr.length - i - 1; j++) {
+                    if (arr[j] > arr[j+1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp
+                    }
+                }
+            }
+            return arr
+        }
+        console.log(sort([5, 4, 3, 2, 1]));
+        console.log(sort([51, 64, 32, 233, 100]));
+
+        
+        // 输入一个年份，判断是否闰年（闰年：能被3整除并且不能被100整数，或者能被400整除）
+        function Isyear(year) {
+            // 如果是闰年就返回 true  否则返回false
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            } 
+            return  flag
+        }
+        console.log(Isyear(1998)); */
+
+        // 用户输入年份，输出当前年份2月份的天数
+        // 如果是闰年，则2月份是29天，如果是平年，则2月份是28天
+        function backDay() {
+            var year = prompt('请您输入年份');
+            if (Isyear(year)) {
+                alert('当前年份是闰年，2月份有29天')
+            } else {
+                alert('当前年份是平年，2月份有28天')
+            }
+        }
+        backDay();
+
+        function Isyear(year) {
+            // 如果是闰年就返回 true  否则返回false
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            } 
+            return  flag
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

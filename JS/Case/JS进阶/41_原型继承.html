@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 继续抽取 公共的部分放到原型上
+        const Person = {
+            eyes: 2,
+            head: 1
+        }
+        
+        //  女人 构造函数 想要继承Person
+        function Woman() {
+
+        }
+        // Woman 通过原型来继承 Person
+        Woman.prototype = Person
+        // 指回原来的构造函数
+        Woman.prototype.constructor = Woman
+        const red = new Woman()
+        console.log(red);
+        console.log(Woman.prototype);
+
+        // 男人 构造函数 想要继承Person
+        function Man() {
+
+        }
+        // 通过原型来继承 Person
+        Man.prototype = Person
+        Man.prototype.constructor = Man
+        const blue = new Man()
+        console.log(blue);
+    </script>
+</body>
+</html>
