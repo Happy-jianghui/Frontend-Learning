@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // document.querySelector()
+        // window.document.querySelector() 
+        // 像document、alert()、console.log()这些都是window的属性，基本BOM的属性和方法都是window的。
+        console.log(document === window.document); //true
+        function fn() {
+            console.log(11);
+        }
+        window.fn()
+
+        // 所有通过var定义在全局作用域中的变量、函数都会变成window对象的属性和方法
+        var num = 10
+        console.log(window.num);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>删除</button>
+    <ul>
+        <li>熊大</li>
+        <li>熊二</li>
+        <li>光头强</li>
+    </ul>
+    <script>
+        // 1. 获取元素
+        var btn = document.querySelector('button');
+        var ul = document.querySelector('ul')
+        // 2. 注册事件
+        btn.onclick = function() {
+            if (ul.children.length == 0) {
+                this.disabled = true;
+                alert('主人，已经没法删了！')
+            } else {
+                // 删除元素 node.removeChilid(child)
+                ul.removeChild(ul.children[0])
+            }
+        }
+    </script>
+</body>
+</html>

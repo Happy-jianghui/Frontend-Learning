@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 500px;
+            margin: 100px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead {
+            background-color: #ccc;
+        }
+        thead tr {
+            height: 40px;
+        }
+        th,
+        td {
+            padding: 5px;
+            border: 1px solid #333
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>科目</th>
+                <th>成绩</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>Saber</td>
+                <td>javascript</td>
+                <td>100</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>Saber1</td>
+                <td>javascript</td>
+                <td>100</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>Saber2</td>
+                <td>javascript</td>
+                <td>100</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>Saber3</td>
+                <td>javascript</td>
+                <td>100</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td>Saber4</td>
+                <td>javascript</td>
+                <td>100</td>
+                <td><a href="#">删除</a></td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script>
+        // 1. 先准备好学生的数据
+        var datas = [
+            {
+            name: 'Saber',
+            subject: 'JavaScript',
+            score: 100
+        },{
+            name: 'Saber1',
+            subject: 'JavaScript',
+            score: 98
+        },{
+            name: 'Saber22',
+            subject: 'JavaScript',
+            score: 95
+        },{
+            name: 'Saber3',
+            subject: 'JavaScript',
+            score: 79
+        }
+        ];
+        // 2. 往tbody 里面创建行： 有几个人（通过数组的长度）我们就创建几行
+        var tbody = document.querySelector('tbody');
+        for (var i = 0; i < datas.length; i++) { // 外面的for循环管行 tr
+            // 1. 创建tr行
+            var tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            // 2. 行里面创建单元格(跟数据有关系的3个单元格) td 单元格的数量取决于每个对象里面的属性个数 for循环遍历对象
+            for(var k in datas[i]) {  // 里面的for循环管列 td
+                // 创建单元格
+                var td = document.createElement('td');
+                // 把对象里面的属性值给td
+                // console.log(datas[i][k]);
+                td.innerHTML = datas[i][k];
+                tr.appendChild(td);
+            }
+            // 3. 创建有删除2个字符的单元格
+            var td = document.createElement('td') 
+            td.innerHTML = '<a href="javascript:;">删除</a>';
+            tr.appendChild(td)
+            
+        }
+        // 4. 删除操作 开始
+        var as = document.querySelectorAll('a');
+            for(var i = 0; i < as.length; i++) {
+                as[i].onclick = function() {
+                    // 点击a 删除 当前a 所在的行(链接的爸爸的爸爸) node.removeChild(child)
+                    tbody.removeChild(this.parentNode.parentNode)
+                }
+            }
+        /* for (var k in obj) {
+            k得到的是属性名
+            obj[k] 得到的是属性值
+        } */
+    </script>
+</body>
+</html>

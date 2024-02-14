@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            margin-top: 50px;
+        }
+        li {
+            list-style: none;
+            width: 300px;
+            padding: 5px;
+            background-color: skyblue;
+            color: white;
+            font-size: 14px;
+            margin: 15px 0  ;
+        }
+        li a {
+            float: right;
+            /* text-decoration: none; */
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>发布</button>
+    <ul>
+    </ul>
+    <script>
+        // 1. 获取元素
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.querySelector('ul');
+        // 2. 注册事件
+        btn.onclick = function() {
+            if (text.value == '') {
+                alert('输入内容不能为空！');
+                return false;
+            } else {
+                // (1) 创建元素
+                var li = document.createElement('li');
+                // 现有li才能赋值
+                li.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+                // (2) 添加元素
+                // ul.appendChild(li)
+                ul.insertBefore(li, ul.children[0])
+                text.value = '';
+                // (3) 删除元素 删除的是当前链接的li 它的父亲
+                var as = document.querySelectorAll('a');
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function() {
+                        // node.removeChild(child); 删除的是li 当前a所在的li this.parentNode;
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+
+            }
+        }
+    </script>
+</body>
+</html>
