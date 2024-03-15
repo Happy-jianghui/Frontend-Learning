@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        插值表达式：Vue的一种模板语法
+     -->
+    <div id="app">
+        <p>{{ name }}</p>
+        <p>{{ name.toUpperCase() }}</p>
+        <p>{{ name + '，您好' }}</p>
+        <p>{{ age >= 18 ? '未成年' : '成年' }}</p>
+        <p>{{ friend.name + '爱好是' + friend.hobby }}</p>
+        <!-- <p>{{ if }}</p> // 报错 -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                name: 'Saber',
+                age: 18,
+                friend: {
+                    name: 'Peiqi',
+                    hobby: 'play'
+                }
+            }
+        })
+    </script> 
+</body>
+</html>
